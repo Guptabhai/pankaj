@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,7 @@ body{
     overflow-x:hidden;
 }
 
+
 /* MAIN */
 .page{
     width:100%;
@@ -44,66 +46,36 @@ body{
     text-align:center;
 }
 
+
 /* LOGO */
 .logo-box{
     width:180px;
     height:180px;
+
     margin:5px auto 30px;
+
+    display:block;
 
     border-radius:50%;
 
-    background:
-        radial-gradient(
-            circle at 50% 35%,
-            #244c77 0%,
-            #123456 55%,
-            #09233c 100%
-        );
+    object-fit:cover;
 
     border:5px solid #fff;
 
     box-shadow:
         0 0 10px rgba(255,255,255,.5),
         0 0 30px rgba(0,150,255,.25);
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    position:relative;
-    overflow:hidden;
-}
-
-.logo-title{
-    font-family:Oswald,sans-serif;
-    font-size:35px;
-    line-height:.95;
-    font-weight:700;
-    letter-spacing:1px;
-
-    text-shadow:0 3px 5px #000;
-}
-
-.logo-sub{
-    font-size:34px;
-    margin-top:5px;
-}
-
-.bull{
-    font-size:42px;
-    margin-top:7px;
-
-    filter:drop-shadow(0 3px 2px #000);
 }
 
 
 /* TITLE */
 .main-title{
     border:2px solid #fff;
+
     border-radius:14px;
 
     padding:17px 10px;
+
     margin-bottom:25px;
 
     background:rgba(0,0,0,.5);
@@ -114,8 +86,11 @@ body{
 
 .main-title h1{
     font-family:Georgia,serif;
+
     font-size:29px;
+
     font-weight:700;
+
     letter-spacing:.5px;
 }
 
@@ -123,13 +98,17 @@ body{
 /* TELEGRAM BUTTON */
 .telegram-btn{
     display:block;
+
     width:100%;
 
     text-decoration:none;
+
     color:#fff;
 
     font-size:20px;
+
     font-weight:800;
+
     letter-spacing:.5px;
 
     padding:22px 12px;
@@ -180,6 +159,7 @@ body{
     margin:27px 0 32px;
 
     font-size:40px;
+
     font-weight:800;
 
     color:#20a9ff;
@@ -190,6 +170,7 @@ body{
 
 .click span{
     display:inline-block;
+
     animation:hand 1s infinite;
 }
 
@@ -229,13 +210,16 @@ body{
     margin-bottom:27px;
 }
 
+
 .feature{
     display:flex;
+
     align-items:flex-start;
 
     gap:10px;
 
     font-size:18px;
+
     line-height:1.45;
 
     margin-bottom:17px;
@@ -247,8 +231,10 @@ body{
     margin-bottom:0;
 }
 
+
 .icon{
     width:28px;
+
     min-width:28px;
 
     font-size:22px;
@@ -264,6 +250,7 @@ body{
     padding:17px 12px;
 
     font-size:15px;
+
     line-height:1.5;
 
     font-weight:700;
@@ -278,14 +265,19 @@ body{
 /* FOOTER */
 .footer{
     margin-top:28px;
+
     font-size:16px;
 }
 
+
 .footer .agency{
     color:#2374ff;
+
     text-decoration:underline;
+
     font-weight:500;
 }
+
 
 .footer .agency-telegram{
     display:inline-block;
@@ -297,6 +289,7 @@ body{
     text-decoration:none;
 
     font-size:15px;
+
     font-weight:700;
 
     padding:8px 16px;
@@ -312,6 +305,7 @@ body{
 
     transition:.25s ease;
 }
+
 
 .footer .agency-telegram:hover{
     color:#fff;
@@ -336,20 +330,10 @@ body{
 
     .logo-box{
         width:155px;
+
         height:155px;
+
         margin-bottom:25px;
-    }
-
-    .logo-title{
-        font-size:30px;
-    }
-
-    .logo-sub{
-        font-size:29px;
-    }
-
-    .bull{
-        font-size:36px;
     }
 
     .main-title h1{
@@ -358,6 +342,7 @@ body{
 
     .telegram-btn{
         font-size:17px;
+
         padding:19px 8px;
     }
 
@@ -387,25 +372,11 @@ body{
 
 
     <!-- LOGO -->
-    <div class="https://i.ibb.co/mCVSwf6T/cropped-circle-image-1.png">
-
-        <div class="logo-title">
-            ZERO
-        </div>
-
-        <div class="logo-title logo-sub">
-            TO
-        </div>
-
-        <div class="logo-title">
-            HERO
-        </div>
-
-        <div class="bull">
-            🐂
-        </div>
-
-    </div>
+    <img
+        src="https://i.ibb.co/mCVSwf6T/cropped-circle-image-1.png"
+        alt="Zero To Hero Logo"
+        class="logo-box"
+    >
 
 
     <!-- TITLE -->
@@ -489,7 +460,7 @@ body{
             </div>
 
             <div>
-                Accuracy More Then 90%
+                Accuracy More Than 90%
             </div>
 
         </div>
@@ -524,7 +495,9 @@ body{
     <!-- FOOTER -->
     <div class="footer">
 
+
         <div>
+
             <a
                 href="#"
                 onclick="return false;"
@@ -532,10 +505,12 @@ body{
             >
                 Managed by Ad Advertex Agency
             </a>
+
         </div>
 
 
         <!-- AGENCY TELEGRAM -->
+
         <div>
 
             <a
@@ -549,6 +524,7 @@ body{
 
         </div>
 
+
     </div>
 
 
@@ -558,3 +534,4 @@ body{
 
 </body>
 </html>
+```
