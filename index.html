@@ -1,210 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZERO TO HERO | Free Telegram</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.sio-container{
-max-width:500px;
-margin:auto;
-padding:20px;
+html,body{
+    width:100%;
+    min-height:100%;
 }
 
-.sio-card{
-background:#fff;
-border-radius:25px;
-padding:30px 25px;
-text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
+body{
+    background:#000;
+    color:#fff;
+    font-family:Inter,Arial,sans-serif;
+    overflow-x:hidden;
 }
 
-.sio-logo{
-width:120px;
-height:120px;
-margin:auto;
-border-radius:50%;
-overflow:hidden;
-border:4px solid #fff;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-animation:float 3s ease-in-out infinite;
+/* MAIN */
+.page{
+    width:100%;
+    min-height:100vh;
+    padding:35px 18px 45px;
+    display:flex;
+    justify-content:center;
 }
 
-.sio-logo img{
-width:100%;
-height:100%;
-object-fit:cover;
+.container{
+    width:100%;
+    max-width:440px;
+    text-align:center;
 }
 
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0);}
+/* LOGO */
+.logo-box{
+    width:180px;
+    height:180px;
+    margin:5px auto 30px;
+    border-radius:50%;
+    background:
+        radial-gradient(circle at 50% 35%,#244c77 0%,#123456 55%,#09233c 100%);
+    border:5px solid #fff;
+    box-shadow:
+        0 0 10px rgba(255,255,255,.5),
+        0 0 30px rgba(0,150,255,.25);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
 }
 
-.sio-badge{
-display:inline-block;
-margin-top:15px;
-padding:8px 16px;
-border-radius:50px;
-background:#e8fff0;
-color:#18c13d;
-font-size:13px;
-font-weight:700;
+.logo-title{
+    font-family:Oswald,sans-serif;
+    font-size:35px;
+    line-height:.95;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow:0 3px 5px #000;
 }
 
-.sio-title{
-font-size:28px;
-font-weight:800;
-color:#222;
-margin-top:15px;
+.logo-sub{
+    font-size:34px;
+    margin-top:5px;
 }
 
-.sio-sub{
-font-size:15px;
-color:#666;
-line-height:1.6;
-margin-top:10px;
+.bull{
+    font-size:42px;
+    margin-top:7px;
+    filter:drop-shadow(0 3px 2px #000);
 }
 
-.sio-feature{
-display:flex;
-align-items:center;
-gap:10px;
-background:#f8f9fb;
-padding:12px;
-border-radius:12px;
-margin-top:10px;
-text-align:left;
+/* TITLE */
+.main-title{
+    border:2px solid #fff;
+    border-radius:14px;
+    padding:17px 10px;
+    margin-bottom:25px;
+    background:rgba(0,0,0,.5);
+    box-shadow:0 0 15px rgba(255,255,255,.08);
 }
 
-.sio-tick{
-width:28px;
-height:28px;
-border-radius:50%;
-background:#18c13d;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:700;
-flex-shrink:0;
+.main-title h1{
+    font-family:Georgia,serif;
+    font-size:29px;
+    font-weight:700;
+    letter-spacing:.5px;
 }
 
-.sio-highlight{
-margin-top:15px;
-padding:14px;
-border-radius:12px;
-background:#fff7d9;
-border:1px solid #ffe082;
-font-weight:700;
-color:#b36b00;
+/* TELEGRAM BUTTON */
+.telegram-btn{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    letter-spacing:.5px;
+    padding:22px 12px;
+    border-radius:7px;
+
+    background:linear-gradient(
+        180deg,
+        #1686d5 0%,
+        #0865ad 48%,
+        #064d89 100%
+    );
+
+    border:2px solid #8ed7ff;
+
+    box-shadow:
+        0 0 8px rgba(0,174,255,.7),
+        0 0 25px rgba(0,130,255,.35),
+        inset 0 1px 0 rgba(255,255,255,.35);
+
+    transition:.25s ease;
+    animation:telegramPulse 2.2s infinite;
 }
 
-.sio-btn{
-display:block;
-width:100%;
-margin-top:20px;
-padding:16px;
-border-radius:50px;
-background:linear-gradient(45deg,#0b6eb8,#0f8ff1);
-color:#fff !important;
-text-decoration:none;
-font-size:18px;
-font-weight:700;
-transition:.3s;
-animation:zoomPulse 1.5s infinite;
+.telegram-btn:hover{
+    transform:scale(1.025);
+    box-shadow:
+        0 0 15px rgba(0,174,255,.9),
+        0 0 35px rgba(0,130,255,.5);
 }
 
-@keyframes zoomPulse{
-0%{
-transform:scale(1);
-}
-50%{
-transform:scale(1.08);
-}
-100%{
-transform:scale(1);
-}
+@keyframes telegramPulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.025);
+    }
 }
 
-.sio-btn:hover{
-transform:scale(1.12);
+/* CLICK HERE */
+.click{
+    margin:27px 0 32px;
+    font-size:40px;
+    font-weight:800;
+    color:#20a9ff;
+    text-shadow:0 0 15px rgba(0,166,255,.5);
 }
 
-.sio-note{
-margin-top:20px;
-font-size:12px;
-color:#777;
-line-height:1.6;
+.click span{
+    display:inline-block;
+    animation:hand 1s infinite;
 }
 
-@media(max-width:480px){
-.sio-title{
-font-size:24px;
+@keyframes hand{
+    0%,100%{transform:rotate(0deg);}
+    50%{transform:rotate(-12deg) scale(1.08);}
 }
 
-.sio-btn{
-font-size:16px;
+/* FEATURES */
+.features{
+    text-align:left;
+    padding:26px 22px;
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30,30,30,.96),
+            rgba(8,8,8,.98)
+        );
+
+    border:1px solid #242424;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.7),
+        inset 0 1px 0 rgba(255,255,255,.04);
+
+    margin-bottom:27px;
 }
+
+.feature{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:18px;
+    line-height:1.45;
+    margin-bottom:17px;
+    font-weight:500;
+}
+
+.feature:last-child{
+    margin-bottom:0;
+}
+
+.icon{
+    width:28px;
+    min-width:28px;
+    font-size:22px;
+}
+
+/* TRANSPARENT BOX */
+.transparency{
+    border:2px solid #fff;
+    border-radius:13px;
+    padding:17px 12px;
+    font-size:15px;
+    line-height:1.5;
+    font-weight:700;
+    background:rgba(0,0,0,.55);
+    box-shadow:0 0 15px rgba(255,255,255,.05);
+}
+
+/* FOOTER */
+.footer{
+    margin-top:28px;
+    font-size:16px;
+}
+
+.footer a{
+    color:#2374ff;
+    text-decoration:underline;
+    font-weight:500;
+}
+
+/* SMALL SCREEN */
+@media(max-width:380px){
+
+    .page{
+        padding:25px 14px 35px;
+    }
+
+    .logo-box{
+        width:155px;
+        height:155px;
+        margin-bottom:25px;
+    }
+
+    .logo-title{
+        font-size:30px;
+    }
+
+    .logo-sub{
+        font-size:29px;
+    }
+
+    .bull{
+        font-size:36px;
+    }
+
+    .main-title h1{
+        font-size:25px;
+    }
+
+    .telegram-btn{
+        font-size:17px;
+        padding:19px 8px;
+    }
+
+    .click{
+        font-size:34px;
+    }
+
+    .feature{
+        font-size:16px;
+    }
 }
 </style>
+</head>
 
-<div class="sio-container">
+<body>
 
-<div class="sio-card">
+<div class="page">
 
-<div class="sio-logo">
-<img src="https://i.ibb.co/21Hx8NDD/YNoc-Pj-A7-Hzjou-Yyh-Zvwh-Uvnm-Hcy-NAc-P8-Wv2t-ZFWz1-Qd-Xe-OT-d-2-Nco2nh-ZDJODu5k-Tvlvv90oln-Xk-RT5fqxs.jpg" alt="Profile">
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+        <div class="logo-title">ZERO</div>
+        <div class="logo-title logo-sub">TO</div>
+        <div class="logo-title">HERO</div>
+        <div class="bull">🐂</div>
+    </div>
+
+
+    <!-- TITLE -->
+    <div class="main-title">
+        <h1>ZERO TO HERO</h1>
+    </div>
+
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+        href="YOUR_TELEGRAM_LINK"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="telegram-btn"
+    >
+        JOIN NOW - FREE TELEGRAM
+    </a>
+
+
+    <!-- CLICK -->
+    <div class="click">
+        Click Here <span>☝️</span>
+    </div>
+
+
+    <!-- FEATURES -->
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon">📌</div>
+            <div>
+                India No.1 Telegram Channel ⭐⭐⭐⭐⭐
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🚀</div>
+            <div>
+                8 Years Experience Of Market
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">✅</div>
+            <div>
+                Risk Management
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🎯</div>
+            <div>
+                Accuracy More Then 90%
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">📊</div>
+            <div>
+                Every Day Nifty50 Volume Research Levels
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- TRANSPARENCY -->
+    <div class="transparency">
+        🗿 No Paid Promotions • No Fake Calls • 100%<br>
+        Transparent Performance
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <a href="#" onclick="return false;">
+            Managed by Ad Advertex Agency
+        </a>
+    </div>
+
 </div>
 
-<div class="sio-badge">
-🔥 WORK FROM HOME
 </div>
 
-<div class="sio-title">
-Work From Home Opportunity
-</div>
-
-<div class="sio-sub">
-Join our Telegram channel to get updates about remote work opportunities and online earning resources.
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<div>Work From Home</div>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<div>Flexible Timing</div>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<div>Beginner Friendly</div>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<div>Project Based Opportunities</div>
-</div>
-
-<div class="sio-highlight">
-⚡ Limited Community Access Available
-</div>
-
-<a href="https://t.me/+Qzyxgtg13GU5ZjRl" class="sio-btn" target="_blank">
-🚀 JOIN TELEGRAM CHANNEL
-</a>
-
-<div class="sio-note">
-Opportunities and earnings vary depending on project availability and performance.
-</div>
-
-</div>
-
-</div>
+</body>
+</html>
