@@ -9,13 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html,body{
+html,
+body{
     width:100%;
     min-height:100%;
 }
@@ -47,17 +49,28 @@ body{
     width:180px;
     height:180px;
     margin:5px auto 30px;
+
     border-radius:50%;
+
     background:
-        radial-gradient(circle at 50% 35%,#244c77 0%,#123456 55%,#09233c 100%);
+        radial-gradient(
+            circle at 50% 35%,
+            #244c77 0%,
+            #123456 55%,
+            #09233c 100%
+        );
+
     border:5px solid #fff;
+
     box-shadow:
         0 0 10px rgba(255,255,255,.5),
         0 0 30px rgba(0,150,255,.25);
+
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+
     position:relative;
     overflow:hidden;
 }
@@ -68,6 +81,7 @@ body{
     line-height:.95;
     font-weight:700;
     letter-spacing:1px;
+
     text-shadow:0 3px 5px #000;
 }
 
@@ -79,17 +93,23 @@ body{
 .bull{
     font-size:42px;
     margin-top:7px;
+
     filter:drop-shadow(0 3px 2px #000);
 }
+
 
 /* TITLE */
 .main-title{
     border:2px solid #fff;
     border-radius:14px;
+
     padding:17px 10px;
     margin-bottom:25px;
+
     background:rgba(0,0,0,.5);
-    box-shadow:0 0 15px rgba(255,255,255,.08);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.08);
 }
 
 .main-title h1{
@@ -99,16 +119,21 @@ body{
     letter-spacing:.5px;
 }
 
+
 /* TELEGRAM BUTTON */
 .telegram-btn{
     display:block;
     width:100%;
+
     text-decoration:none;
     color:#fff;
+
     font-size:20px;
     font-weight:800;
     letter-spacing:.5px;
+
     padding:22px 12px;
+
     border-radius:7px;
 
     background:linear-gradient(
@@ -126,32 +151,41 @@ body{
         inset 0 1px 0 rgba(255,255,255,.35);
 
     transition:.25s ease;
+
     animation:telegramPulse 2.2s infinite;
 }
 
 .telegram-btn:hover{
     transform:scale(1.025);
+
     box-shadow:
         0 0 15px rgba(0,174,255,.9),
         0 0 35px rgba(0,130,255,.5);
 }
 
 @keyframes telegramPulse{
+
     0%,100%{
         transform:scale(1);
     }
+
     50%{
         transform:scale(1.025);
     }
 }
 
+
 /* CLICK HERE */
 .click{
     margin:27px 0 32px;
+
     font-size:40px;
     font-weight:800;
+
     color:#20a9ff;
-    text-shadow:0 0 15px rgba(0,166,255,.5);
+
+    text-shadow:
+        0 0 15px rgba(0,166,255,.5);
 }
 
 .click span{
@@ -160,14 +194,23 @@ body{
 }
 
 @keyframes hand{
-    0%,100%{transform:rotate(0deg);}
-    50%{transform:rotate(-12deg) scale(1.08);}
+
+    0%,100%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(-12deg) scale(1.08);
+    }
 }
+
 
 /* FEATURES */
 .features{
     text-align:left;
+
     padding:26px 22px;
+
     border-radius:25px;
 
     background:
@@ -189,10 +232,14 @@ body{
 .feature{
     display:flex;
     align-items:flex-start;
+
     gap:10px;
+
     font-size:18px;
     line-height:1.45;
+
     margin-bottom:17px;
+
     font-weight:500;
 }
 
@@ -203,20 +250,30 @@ body{
 .icon{
     width:28px;
     min-width:28px;
+
     font-size:22px;
 }
 
-/* TRANSPARENT BOX */
+
+/* TRANSPARENCY */
 .transparency{
     border:2px solid #fff;
+
     border-radius:13px;
+
     padding:17px 12px;
+
     font-size:15px;
     line-height:1.5;
+
     font-weight:700;
+
     background:rgba(0,0,0,.55);
-    box-shadow:0 0 15px rgba(255,255,255,.05);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.05);
 }
+
 
 /* FOOTER */
 .footer{
@@ -224,11 +281,51 @@ body{
     font-size:16px;
 }
 
-.footer a{
+.footer .agency{
     color:#2374ff;
     text-decoration:underline;
     font-weight:500;
 }
+
+.footer .agency-telegram{
+    display:inline-block;
+
+    margin-top:10px;
+
+    color:#20a9ff;
+
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:700;
+
+    padding:8px 16px;
+
+    border:1px solid #1686d5;
+
+    border-radius:20px;
+
+    background:rgba(0,120,220,.12);
+
+    box-shadow:
+        0 0 10px rgba(0,150,255,.2);
+
+    transition:.25s ease;
+}
+
+.footer .agency-telegram:hover{
+    color:#fff;
+
+    background:#0865ad;
+
+    border-color:#8ed7ff;
+
+    box-shadow:
+        0 0 15px rgba(0,174,255,.6);
+
+    transform:scale(1.04);
+}
+
 
 /* SMALL SCREEN */
 @media(max-width:380px){
@@ -271,9 +368,16 @@ body{
     .feature{
         font-size:16px;
     }
+
+    .footer{
+        font-size:14px;
+    }
+
 }
+
 </style>
 </head>
+
 
 <body>
 
@@ -281,24 +385,44 @@ body{
 
 <div class="container">
 
+
     <!-- LOGO -->
     <div class="logo-box">
-        <div class="logo-title">ZERO</div>
-        <div class="logo-title logo-sub">TO</div>
-        <div class="logo-title">HERO</div>
-        <div class="bull">🐂</div>
+
+        <div class="logo-title">
+            ZERO
+        </div>
+
+        <div class="logo-title logo-sub">
+            TO
+        </div>
+
+        <div class="logo-title">
+            HERO
+        </div>
+
+        <div class="bull">
+            🐂
+        </div>
+
     </div>
 
 
     <!-- TITLE -->
     <div class="main-title">
-        <h1>ZERO TO HERO</h1>
+
+        <h1>
+            ZERO TO HERO
+        </h1>
+
     </div>
 
 
-    <!-- TELEGRAM BUTTON -->
+    <!-- MAIN TELEGRAM BUTTON -->
+    <!-- APNA MAIN TELEGRAM LINK YAHAN DALEIN -->
+
     <a
-        href="YOUR_TELEGRAM_LINK"
+        href="https://t.me/YOUR_CHANNEL_USERNAME"
         target="_blank"
         rel="noopener noreferrer"
         class="telegram-btn"
@@ -307,66 +431,126 @@ body{
     </a>
 
 
-    <!-- CLICK -->
+    <!-- CLICK HERE -->
     <div class="click">
+
         Click Here <span>☝️</span>
+
     </div>
 
 
     <!-- FEATURES -->
     <div class="features">
 
+
         <div class="feature">
-            <div class="icon">📌</div>
+
+            <div class="icon">
+                📌
+            </div>
+
             <div>
                 India No.1 Telegram Channel ⭐⭐⭐⭐⭐
             </div>
+
         </div>
 
+
         <div class="feature">
-            <div class="icon">🚀</div>
+
+            <div class="icon">
+                🚀
+            </div>
+
             <div>
                 8 Years Experience Of Market
             </div>
+
         </div>
 
+
         <div class="feature">
-            <div class="icon">✅</div>
+
+            <div class="icon">
+                ✅
+            </div>
+
             <div>
                 Risk Management
             </div>
+
         </div>
 
+
         <div class="feature">
-            <div class="icon">🎯</div>
+
+            <div class="icon">
+                🎯
+            </div>
+
             <div>
                 Accuracy More Then 90%
             </div>
+
         </div>
 
+
         <div class="feature">
-            <div class="icon">📊</div>
+
+            <div class="icon">
+                📊
+            </div>
+
             <div>
                 Every Day Nifty50 Volume Research Levels
             </div>
+
         </div>
+
 
     </div>
 
 
     <!-- TRANSPARENCY -->
     <div class="transparency">
+
         🗿 No Paid Promotions • No Fake Calls • 100%<br>
+
         Transparent Performance
+
     </div>
 
 
     <!-- FOOTER -->
     <div class="footer">
-        <a href="#" onclick="return false;">
-            Managed by Ad Advertex Agency
-        </a>
+
+        <div>
+            <a
+                href="#"
+                onclick="return false;"
+                class="agency"
+            >
+                Managed by Ad Advertex Agency
+            </a>
+        </div>
+
+
+        <!-- AGENCY TELEGRAM -->
+        <div>
+
+            <a
+                href="https://t.me/YOUR_AGENCY_USERNAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="agency-telegram"
+            >
+                📲 Contact Us on Telegram
+            </a>
+
+        </div>
+
     </div>
+
 
 </div>
 
