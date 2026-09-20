@@ -1,37 +1,210 @@
-<div style="position: relative; top: 0; left: 0; text-align:center; font-family:'Oxanium',sans-serif; color:#fff; background:url('https://i.ibb.co/7x4vqZqd/image.jpg') no-repeat center center/cover; min-height:100vh; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 10px; margin:0; box-sizing:border-box;">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-  <img src="https://i.ibb.co/Y40Q5nth/cropped-circle-image-7.png" alt="Trade With NAVJOT BRAR" style="width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:15px; box-shadow:0 0 20px rgba(255,215,0,0.4); border:3px solid #FFD700;">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-  <h1 style="color:#ffeb3b; font-size:18px; margin:8px 0; text-shadow:2px 2px 6px #000; letter-spacing:1px;">
-    🔥 DAILY FREE DEMO CALL 🔥 <br> Trade WITH GHANSHYAM TECH ™
-  </h1>
+.sio-container{
+max-width:500px;
+margin:auto;
+padding:20px;
+}
 
-  <a href="https://t.me/+AQo-LdXyx8pkZDc1" style="display:inline-block; margin:20px 0; padding:16px 45px; background:#0088cc; color:#fff; font-size:15px; font-weight:bold; border-radius:14px; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,0.5); animation:pulse 1.8s infinite;">
-    🚀 JOIN ON TELEGRAM
-  </a>
+.sio-card{
+background:#fff;
+border-radius:25px;
+padding:30px 25px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
 
-  <!-- 🔻 AD SECTION START 🔻 -->
-  <div style="background:rgba(0,0,0,0.65); border:2px dashed #FFD700; padding:15px; margin:15px 0; border-radius:12px; max-width:320px;">
-    <h3 style="color:#FFD700; margin:5px 0;">📢 AD PROMOTION</h3>
-    <p style="font-size:14px; line-height:1.5;">
-      🚀 Apna <b>Telegram Channel</b><br>
-      📈 Grow karna chahte ho?<br>
-      💰 Paid Promotion Available
-    </p>
-    <a href="https://t.me/+k-z6FWZrh_RjYzBl" style="display:inline-block; margin-top:10px; padding:10px 25px; background:#ff5722; color:#fff; border-radius:25px; text-decoration:none; font-weight:bold;">
-      📩 Contact Now
-    </a>
-  </div>
-  <!-- 🔺 AD SECTION END 🔺 -->
+.sio-logo{
+width:120px;
+height:120px;
+margin:auto;
+border-radius:50%;
+overflow:hidden;
+border:4px solid #fff;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+animation:float 3s ease-in-out infinite;
+}
 
-  <p style="font-size:15px;">NIFTY • BANKNIFTY • STOCK OPTIONS 📊</p>
+.sio-logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
 
-  <style>
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.08); }
-      100% { transform: scale(1); }
-    }
-  </style>
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.sio-badge{
+display:inline-block;
+margin-top:15px;
+padding:8px 16px;
+border-radius:50px;
+background:#e8fff0;
+color:#18c13d;
+font-size:13px;
+font-weight:700;
+}
+
+.sio-title{
+font-size:28px;
+font-weight:800;
+color:#222;
+margin-top:15px;
+}
+
+.sio-sub{
+font-size:15px;
+color:#666;
+line-height:1.6;
+margin-top:10px;
+}
+
+.sio-feature{
+display:flex;
+align-items:center;
+gap:10px;
+background:#f8f9fb;
+padding:12px;
+border-radius:12px;
+margin-top:10px;
+text-align:left;
+}
+
+.sio-tick{
+width:28px;
+height:28px;
+border-radius:50%;
+background:#18c13d;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+flex-shrink:0;
+}
+
+.sio-highlight{
+margin-top:15px;
+padding:14px;
+border-radius:12px;
+background:#fff7d9;
+border:1px solid #ffe082;
+font-weight:700;
+color:#b36b00;
+}
+
+.sio-btn{
+display:block;
+width:100%;
+margin-top:20px;
+padding:16px;
+border-radius:50px;
+background:linear-gradient(45deg,#0b6eb8,#0f8ff1);
+color:#fff !important;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+transition:.3s;
+animation:zoomPulse 1.5s infinite;
+}
+
+@keyframes zoomPulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.08);
+}
+100%{
+transform:scale(1);
+}
+}
+
+.sio-btn:hover{
+transform:scale(1.12);
+}
+
+.sio-note{
+margin-top:20px;
+font-size:12px;
+color:#777;
+line-height:1.6;
+}
+
+@media(max-width:480px){
+.sio-title{
+font-size:24px;
+}
+
+.sio-btn{
+font-size:16px;
+}
+}
+</style>
+
+<div class="sio-container">
+
+<div class="sio-card">
+
+<div class="sio-logo">
+<img src="https://i.ibb.co/21Hx8NDD/YNoc-Pj-A7-Hzjou-Yyh-Zvwh-Uvnm-Hcy-NAc-P8-Wv2t-ZFWz1-Qd-Xe-OT-d-2-Nco2nh-ZDJODu5k-Tvlvv90oln-Xk-RT5fqxs.jpg" alt="Profile">
+</div>
+
+<div class="sio-badge">
+🔥 WORK FROM HOME
+</div>
+
+<div class="sio-title">
+Work From Home Opportunity
+</div>
+
+<div class="sio-sub">
+Join our Telegram channel to get updates about remote work opportunities and online earning resources.
+</div>
+
+<div class="sio-feature">
+<div class="sio-tick">✓</div>
+<div>Work From Home</div>
+</div>
+
+<div class="sio-feature">
+<div class="sio-tick">✓</div>
+<div>Flexible Timing</div>
+</div>
+
+<div class="sio-feature">
+<div class="sio-tick">✓</div>
+<div>Beginner Friendly</div>
+</div>
+
+<div class="sio-feature">
+<div class="sio-tick">✓</div>
+<div>Project Based Opportunities</div>
+</div>
+
+<div class="sio-highlight">
+⚡ Limited Community Access Available
+</div>
+
+<a href="https://t.me/+Qzyxgtg13GU5ZjRl" class="sio-btn" target="_blank">
+🚀 JOIN TELEGRAM CHANNEL
+</a>
+
+<div class="sio-note">
+Opportunities and earnings vary depending on project availability and performance.
+</div>
+
+</div>
 
 </div>
